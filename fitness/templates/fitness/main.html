@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FBU BITIRME</title>
+        <!-- Stil dosyalarını statik olarak yükle -->
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}" />
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap-grid.css' %}" />
@@ -13,10 +14,12 @@
   </head>
 
   <body>
+        <!-- Navigasyon çubuğu -->
     <nav class="navbar bg-secondary">
       <a href=""><img src="{% static 'assets/img/logo_foto.png' %} " alt="" width="80" height="80" /></a>
 
       <div class="navbar-menu">
+            <!-- Menü öğeleri -->
         <a class="navbar-brand" style="font-weight:700" href="{% url 'home' %}"><img src="{% static 'assets/img/home_logo.png' %} " alt="" width="25" height="25" /> ANASAYFA</a>
         <a class="navbar-brand" style="font-weight:700" href="{% url 'fitness' %}"><img src="{% static 'assets/img/fitness_logo.png' %} " alt="" width="25" height="25" />FITNESS</a>
         <a class="navbar-brand" style="font-weight:700" href="{% url 'about' %}"><img src="{% static 'assets/img/about_logo.png' %} " alt="" width="25" height="25" />HAKKIMIZDA</a>
@@ -24,6 +27,7 @@
       </div>
 
       <div class="navbar-menu">
+         <!-- Kullanıcı durumuna göre giriş veya çıkış bağlantısı -->
         {% if user.is_authenticated %}
           <a class="navbar-item" href="{% url 'logout' %}">ÇIKIŞ YAP</a>
         {% else %}

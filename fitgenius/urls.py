@@ -14,10 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path,include    
+from django.contrib import admin  # Django'nun yönetim paneli için gerekli modül
+from django.urls import path, include  # URL yönlendirmesi için gerekli modüller
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',include('fitness.urls')),
+    path('admin/', admin.site.urls),  # Yönetim paneline erişim için URL
+    path('', include('fitness.urls')),  # 'fitness' uygulamasının URL yapılandırmasını dahil eder
 ]

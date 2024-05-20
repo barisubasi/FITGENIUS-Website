@@ -1,177 +1,135 @@
-.body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
+/* Genel sayfa stilleri */
 
-.navbar-custom {
-  background-color: #096bb2;
-}
-
-.navbar-menu {
-  display: flex;
-
-
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('assets/font/Montserrat-Regular.woff') format('woff');
-  /* Diğer formatlar için gerektiğinde buraya ekleyebilirsiniz */
-}
-
-.navbar-menu a {
-  font-size: large;
-  color: #fff;
-  letter-spacing: 2px;
-}
-
-.endex {
-  padding-top: 100px;
-  text-align: center;
-  padding-bottom: 1000px;
-}
-
+/* Body elementi için genel stiller */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Yazı tipi belirleniyor */
+  background-color: #f0f0f0; /* Arka plan rengi */
+  margin: 0; /* Kenar boşlukları sıfırlanıyor */
+  padding: 0; /* Dolgu sıfırlanıyor */
 }
 
+/* Ana container için genel stiller */
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Maksimum genişlik belirleniyor */
+  margin: 50px auto; /* Kenar boşlukları ayarlanıyor */
+  background-color: #fff; /* Arka plan rengi */
+  padding: 20px; /* Dolgu */
+  border-radius: 10px; /* Köşe yuvarlama */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Kutu gölgesi */
 }
 
+/* Başlık için genel stiller */
 h1 {
-  text-align: center;
-  color: #333;
+  text-align: center; /* Metin hizalama */
+  color: #333; /* Metin rengi */
 }
 
-.input-group {
-  margin-bottom: 20px;
-}
+/* Giriş formu ve kayıt formu stilleri */
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#result {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 18px;
-  color: #333;
-  font-weight: bold;
-}
-
-#loginForm,
-#registerForm {
-  margin-top: 20px;
-}
-
+/* Giriş ve kayıt form container'ı için genel stiller */
 .login-container {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  margin: auto;
+  background-color: #fff; /* Arka plan rengi */
+  padding: 15px; /* Dolgu */
+  border-radius: 8px; /* Köşe yuvarlama */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Kutu gölgesi */
+  max-width: 400px; /* Maksimum genişlik belirleniyor */
+  width: 100%; /* Genişlik 100% */
+  margin: auto; /* Ortala */
 }
 
+/* Etiketler için genel stiller */
 .login-container label {
-  display: block;
-  margin-bottom: 8px;
+  display: block; /* Blok öğe olarak görüntüleme */
+  margin-bottom: 8px; /* Alt boşluk */
 }
 
+/* Giriş alanları için genel stiller */
 .login-container input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
+  width: 100%; /* Genişlik 100% */
+  padding: 8px; /* Dolgu */
+  margin-bottom: 16px; /* Alt boşluk */
+  box-sizing: border-box; /* Kutu modeli */
 }
 
-.login-container .login-choice-button {
-  background-color: #acb0ac;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 49%;
-}
-
+/* Giriş ve kayıt seçenekleri için genel stiller */
+.login-container .login-choice-button,
 .login-container .register-choice-button {
-  background-color: #acb0ac;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 49%;
+  background-color: #acb0ac; /* Arkaplan rengi */
+  color: #fff; /* Metin rengi */
+  padding: 10px; /* Dolgu */
+  border: none; /* Kenarlık yok */
+  border-radius: 4px; /* Köşe yuvarlama */
+  cursor: pointer; /* İşaretçi türü */
+  width: 49%; /* Genişlik */
 }
 
-.login-container .apply-button {
-  background-color: #096bb2;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.kvkk-container {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  margin-left: 5px;
-}
-
-.kvkk-container label {
-  margin-left: 15px;
-}
-
-.kvkk-container input[type="checkbox"] {
-  width: 20px;
-  border-color: #363c36;
-}
-
+/* Giriş ve kayıt seçenekleri için aktif hale getirilmiş stiller */
 .login-container .login-choice-button.active,
 .login-container .register-choice-button.active {
-  background-color: #363c36;
+  background-color: #363c36; /* Aktif arkaplan rengi */
 }
 
-.login-input {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 8vw;
+/* Uygula butonu için genel stiller */
+.login-container .apply-button {
+  background-color: #096bb2; /* Arkaplan rengi */
+  color: #fff; /* Metin rengi */
+  padding: 10px; /* Dolgu */
+  border: none; /* Kenarlık yok */
+  border-radius: 4px; /* Köşe yuvarlama */
+  cursor: pointer; /* İşaretçi türü */
+  width: 100%; /* Genişlik */
+}
+
+/* KVKK kutusu için genel stiller */
+.kvkk-container {
+  margin-top: 10px; /* Üst boşluk */
+  display: flex; /* Öğeleri yatay olarak düzenleme */
+  align-items: center; /* Dikey hizalama */
+  margin-left: 5px; /* Sol boşluk */
+}
+
+/* KVKK etiketi için stiller */
+.kvkk-container label {
+  margin-left: 15px; /* Sol boşluk */
+}
+
+/* KVKK onay kutusu için stiller */
+.kvkk-container input[type="checkbox"] {
+  width: 20px; /* Genişlik */
+  border-color: #363c36; /* Kenarlık rengi */
+}
+
+/* Diğer stiller */
+
+/* Navbar için genel stiller */
+.navbar-custom {
+  background-color: #096bb2; /* Arkaplan rengi */
+}
+
+/* Navbar menüsü için genel stiller */
+.navbar-menu {
+  display: flex; /* Öğeleri yatay olarak düzenleme */
+}
+
+/* Navbar menü öğeleri için genel stiller */
+.navbar-menu a {
+  font-size: large; /* Yazı tipi boyutu */
+  color: #fff; /* Metin rengi */
+  letter-spacing: 2px; /* Harf aralığı */
+}
+
+/* İndeks sayfası stil ayarları */
+.endex {
+  padding-top: 100px; /* Üst dolgu */
+  text-align: center; /* Metin hizalama */
+  padding-bottom: 1000px; /* Alt dolgu */
+}
+
+/* Sonuç kutusu için genel stiller */
+#result {
+  margin-top: 20px; /* Üst boşluk */
+  text-align: center; /* Metin hizalama */
+  font-size: 18px; /* Yazı tipi boyutu */
+  color: #333; /* Metin rengi */
+  font-weight: bold; /* Yazı tipi kalınlığı */
 }

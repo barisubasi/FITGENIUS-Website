@@ -31,8 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'fitness',
-    'account',
+    'fitness',  # Fitness uygulaması eklendi
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
